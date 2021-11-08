@@ -1,5 +1,5 @@
 
-let isPrime = true
+let isPrime = false
 function prime(...numbers) {
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] < 2) {
