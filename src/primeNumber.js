@@ -1,31 +1,30 @@
-
 let isPrime = true
 function findPrime(...numbers) {
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] < 2) {
-            console.log( numbers[i]  +" --> 2 den büyük sayı giriniz")
+    numbers.map(number => {
+        if (number < 2) {
+            console.log(number + " --> 2 den büyük sayı giriniz")
         }
-        else if (numbers[i] == 2) {
-            console.log(numbers[i] + " asal sayıdır")
+        else if (number == 2) {
+            console.log(number + " asal sayıdır")
         }
         else {
-            for (let j = 2; j < numbers[i]; j++) {
-                if (numbers[i] % j == 0) {
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
                     isPrime = false
                     break
-                }   
-                else{
+                } else {
                     isPrime = true
                 }
             }
-                if (isPrime == true) {
-                    console.log(numbers[i] + " asal sayıdır.")
-                }
-                else {
-                    console.log(numbers[i] + " asal sayı değildir.")
-                }
+            if (isPrime == true) {
+                console.log(number + " asal sayıdır.")
+            }
+            else {
+                console.log(number + " asal sayı değildir.")
+            } 
         }
     }
+    )
 }
 
-findPrime(-23, 23, 37, 60,99,101,103,107,241)
+findPrime(-23, 23, 37, 60, 99, 101, 103, 107, 241, 1, 2, 3, 4)

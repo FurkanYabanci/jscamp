@@ -10,7 +10,7 @@ function getPrime() {
             }
         }
         if(isPrime == true){
-            console.log(i + "sayısı asaldır")
+            console.log(i + "sayısı asaldir")
         }            
     }
 }

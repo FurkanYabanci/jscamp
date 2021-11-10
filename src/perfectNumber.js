@@ -7,7 +7,7 @@ function findPerfect() {
             }
         }
         if(i == total){
-            console.log(i+" sayisi mükemmel sayidir")
+            console.log(i+" sayısı mükemmel sayıdır")
         }
     }
 }
