@@ -1,6 +1,6 @@
 
 let isPrime = true
-function prime(...numbers) {
+function findPrime(...numbers) {
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] < 2) {
             console.log( numbers[i]  +" --> 2 den büyük sayı giriniz")
@@ -28,4 +28,4 @@ function prime(...numbers) {
     }
 }
 
-prime(-23, 23, 37, 40,99,101,103,107,241,1)
+findPrime(-23, 23, 37, 60,99,101,103,107,241)
