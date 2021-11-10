@@ -1,5 +1,5 @@
 
-let getNumbers = (number) => {
+let getNumber = (number) => {
     let holdDividing = [];
     for (let i = 1; i < number; i++) {
         if (number % i == 0) {
@@ -16,10 +16,10 @@ let findFriends = (number1,number2) => {
    let secondSumDividing = secondNumberDividing.reduce((acc,p) => acc+p,0)
 
    if(number1 == secondSumDividing && number2 == firstSumDividing){
-       console.log("Sayılar arkadaş sayılardır")
+       console.log(number1+" ve "+number2+" arkadaş sayılardır")
 }
 else{
-    console.log("Arkadaş sayı değillerdir")
+    console.log(number1+" ve "+number2+" arkadaş sayı değillerdir")
 }
 }
 findFriends(6232, 6368)

@@ -28,4 +28,4 @@ function findPrime(...numbers) {
     }
 }
 
-findPrime(-23, 23, 37, 60,99,101,103,107,241,1)
+findPrime(-23, 23, 37, 60,99,101,103,107,241)
